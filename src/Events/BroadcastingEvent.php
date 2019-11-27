@@ -15,7 +15,7 @@ class BroadcastingEvent extends TaskEvent implements ShouldBroadcast
      *
      * @var string
      */
-    public $broadcastQueue = config('totem.broadcasting.queue');
+    public $broadcastQueue = 'default';
 
     /**
      * Get the channels the event should broadcast on.
